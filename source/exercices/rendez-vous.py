@@ -10,8 +10,8 @@ entrees_invisibles = [
 ]
 
 @solution
-def rendezVous(d1,f1,d2,f2):
-   if f1<d2 or f2<d1:
+def rendezVous(debut1,fin1,debut2,fin2):
+   if fin1<debut2 or fin2<debut1:
 	   res=False
    else:
 	   res=True
