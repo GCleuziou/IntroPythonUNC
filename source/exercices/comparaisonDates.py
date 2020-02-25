@@ -14,7 +14,7 @@ entrees_invisibles = [
 ]
 
 @solution
-def compareDate(jour1,mois1,annee1,jour2,mois2,annee2):
+def compareDates(jour1,mois1,annee1,jour2,mois2,annee2):
    if annee1<annee2:
        res=-1
    elif annee2<annee1:
