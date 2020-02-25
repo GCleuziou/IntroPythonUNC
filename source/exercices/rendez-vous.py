@@ -12,7 +12,7 @@ entrees_invisibles = [
 @solution
 def rendezVous(d1,f1,d2,f2):
    if f1<d2 or f2<d1:
-	   res False
+	   res=False
    else:
-	   res True
+	   res=True
    return res
