@@ -12,5 +12,3 @@ Les sujets de TP:
    :maxdepth: 2
 
    tp1
-   demo_exerciseur
-   demo_pcap_juin_2018

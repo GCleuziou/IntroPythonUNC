@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Demonstration Exerciseur'
-copyright = '2018, jrobert'
-author = 'jrobert'
+project = 'Introduction à Python - UNC'
+copyright = '2020, guillaume.cleuziou'
+author = 'guillaume.cleuziou'
 
 # The short X.Y version
 version = ''
@@ -75,7 +75,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+#html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -102,7 +103,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'DemonstrationExerciseurdoc'
+htmlhelp_basename = 'IntroPythonUNC'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -129,8 +130,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'DemonstrationExerciseur.tex', 'Demonstration Exerciseur Documentation',
-     'jrobert', 'manual'),
+    (master_doc, 'IntroPythonUNC.tex', 'Introduction à Python Documentation',
+     'guillaume.cleuziou', 'manual'),
 ]
 
 
@@ -139,7 +140,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'demonstrationexerciseur', 'Demonstration Exerciseur Documentation',
+    (master_doc, 'IntroPythonUNC', 'Introduction à Python Documentation',
      [author], 1)
 ]
 
@@ -150,8 +151,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'DemonstrationExerciseur', 'Demonstration Exerciseur Documentation',
-     author, 'DemonstrationExerciseur', 'One line description of project.',
+    (master_doc, 'IntroPythonUNC', 'Introduction à Python Documentation',
+     author, 'IntroPythonUNC', 'One line description of project.',
      'Miscellaneous'),
 ]
 

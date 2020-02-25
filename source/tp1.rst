@@ -1,10 +1,9 @@
-================
-TP boucles While
-================
+=============================
+TP1 - Prise en main de Python
+=============================
 
-Ce TP a pour objectif de vous faire travailler els boucles *While*. 
+Les exercices qui suivent correspondent aux programmes Python qu'il vous est demandé d'écrire à la fin du TP1.
 
 
-
-.. include::  exercices/twisted_fate.rst
-.. include::  exercices/exo1.rst
+.. include::  exercices/polynome.rst
+.. include::  exercices/rendez-vous.rst
