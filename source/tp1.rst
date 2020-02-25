@@ -6,5 +6,5 @@ Les exercices qui suivent correspondent aux programmes Python qu'il vous est dem
 
 
 .. include::  exercices/rendez-vous.rst
-.. include::  exercices/polynome.rst
 .. include::  exercices/comparaisonDates.rst
+.. include::  exercices/polynome.rst
