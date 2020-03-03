@@ -8,3 +8,4 @@ Les exercices qui suivent correspondent aux programmes Python qu'il vous est dem
 .. include::  exercicesTP2/Jour-Nuit.rst
 .. include::  exercicesTP2/QualificationJO.rst
 .. include::  exercicesTP2/SommeNbPairs.rst
+.. include::  exercicesTP2/SommeNPremiersEntiers.rst
