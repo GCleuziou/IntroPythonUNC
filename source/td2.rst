@@ -11,3 +11,7 @@ Les exercices qui suivent correspondent aux programmes Python qu'il vous est dem
 .. include::  exercicesTD2/Minimum.rst
 .. include::  exercicesTD2/Moyenne.rst
 .. include::  exercicesTD2/Ecart.rst
+.. include::  exercicesTD2/NbOccurrencesLettre.rst
+.. include::  exercicesTD2/PremiereOccurrenceLettre.rst
+.. include::  exercicesTD2/Prononcable.rst
+.. include::  exercicesTD2/NbSyllabes.rst
