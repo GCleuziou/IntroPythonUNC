@@ -1,5 +1,5 @@
-Exercice 3 (TP) : QualificationJO
----------------------------------
+Exercice 3 : QualificationJO
+----------------------------
 
 La fédération d'athlétisme vient de publier les critères de qualification à l'épreuve du 100m des prochains jeux olympiques. Ces critères sont les suivants :
 

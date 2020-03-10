@@ -1,5 +1,5 @@
-Exercice 2 (TP) : Jour-Nuit
----------------------------
+Exercice 2 : Jour-Nuit
+----------------------
 
 Il fait jour de 6h à 18h, il fait nuit le reste du temps. C'est le matin de 5h à 12h, l'après-midi de 12h à 17h, la soirée de 17h à 21h, la nuit le reste du temps.
 

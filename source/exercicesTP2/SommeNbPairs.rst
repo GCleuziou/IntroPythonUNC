@@ -1,5 +1,5 @@
-Exercice 6.1 (TP) : Somme nombres pairs
----------------------------------------
+Exercice 6.1 : Somme nombres pairs
+----------------------------------
 
 Ecrire une fonction ``sommeNbPairs`` qui fait la somme des nombres paires d'une liste de nombres passée en paramètre.
 
