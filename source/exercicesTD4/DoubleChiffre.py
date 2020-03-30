@@ -15,13 +15,13 @@ entrees_invisibles = [
 
 @solution
 def doubleChiffre(nombre):
-    res=False
+    trouve=False
     prec=nombre%10
-    reste=nombre/10
-    while not res and reste!=0:
+    reste=nombre//10
+    while reste>0 and not trouve:
         if prec==reste%10:
-            res=True
+            trouve=True
         else:
             prec=reste%10
             reste=reste//10
-    return res
+    return trouve
