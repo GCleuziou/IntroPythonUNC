@@ -26,9 +26,9 @@
 										{% for exo in exercices %}
 										<td>
 											{% if resultats[nom][exo]=='oui' and valide.value %}
-											<img src="_static/medaille.png" alt="X"/>
+											<img src="medaille.png" alt="X"/>
 											{% elif resultats[nom][exo]=='oui' %}
-											<img src="_static/medaille_bloquee.png" alt="-"/>
+											<img src="medaille_bloquee.png" alt="-"/>
 											{% else %}
 											{% set valide.value = False %}
 											{% endif %}
@@ -41,8 +41,8 @@
     </header>
 		<p>Légende :
 			<ul>
-			<li><img src="_static/medaille.png" alt="X"/> Problème résolu
-			<li><img src="_static/medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
+			<li><img src="medaille.png" alt="X"/> Problème résolu
+			<li><img src="medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
 			</ul>
 		<p>
 </body>
