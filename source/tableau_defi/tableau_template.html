@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Défi-code|Résultats</title>
-    <link rel="stylesheet" href="tableau.css"/>
+    <link rel="stylesheet" href="tableau_defi/tableau.css"/>
 
 </head>
 <body>
@@ -25,9 +25,9 @@
 										{% for exo in exercices %}
 										<td>
 											{% if resultats[nom][exo]=='oui' and valide.value %}
-											<img src="medaille.png" alt="X"/>
+											<img src="tableau_defi/medaille.png" alt="X"/>
 											{% elif resultats[nom][exo]=='oui' %}
-											<img src="medaille_bloquee.png" alt="-"/>
+											<img src="tableau_defi/medaille_bloquee.png" alt="-"/>
 											{% else %}
 											{% set valide.value = False %}
 											{% endif %}
@@ -40,8 +40,8 @@
     </header>
 		<p>Légende :
 			<ul>
-			<li><img src="medaille.png" alt="X"/> Problème résolu
-			<li><img src="medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
+			<li><img src="tableau_defi/medaille.png" alt="X"/> Problème résolu
+			<li><img src="tableau_defi/medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
 			</ul>
 		<p>
 </body>

@@ -1,7 +1,7 @@
 # imagier_modele_1_facile.py
 # Version 1 du modèle
 
-nomFic='/Users/cleuziou/donnees/enseignement/UNC/IntroPython/easySphinx/tableau_defi/tentatives_csv.csv'
+nomFic='/Users/cleuziou/donnees/enseignement/UNC/IntroPython/easySphinx/source/tableau_defi/tentatives_csv.csv'
 exercices=["ProduitScalaire","MotPalindrome","CompteChiffre","PhrasePalindrome","SousChaine","ElemSuiteArithmetique","ElemSuiteGeometrique","VerifSuiteAriGeo","SuiteArithmetique","SuiteGeometrique","SuiteAriGeo","Conway"]
 
 def chargerResultats(nomFic,listeExercices):
