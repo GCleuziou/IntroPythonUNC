@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<title>Défi-code|Résultats</title>
+    <link rel="stylesheet" href="tableau.css"/>
+
+</head>
+<body>
+	<header>
+        <h1> Résultats temporaires du "Défi - code"</h1>
+				<p>Généré le {{date.day}}/{{date.month}}/{{date.year}} à {{date.strftime("%H:%M:%S %Z")}}</p>
+				<table>
+						<tbody>
+							<tr>
+								<th>Participants</th>
+								{% for i in range(exercices|length) %}
+								<th>Problème {{i+1}} <br> <span class="nompb">{{exercices[i]}}</span></th>
+								{% endfor %}
+							</tr>
+							{% for nom in etudiants %}
+								<tr>
+										<th>{{nom}}</th>
+										{% set valide = namespace(value=True) %}
+										{% for exo in exercices %}
+										<td>
+											{% if resultats[nom][exo]=='oui' and valide.value %}
+											<img src="medaille.png" alt="X"/>
+											{% elif resultats[nom][exo]=='oui' %}
+											<img src="medaille_bloquee.png" alt="-"/>
+											{% else %}
+											{% set valide.value = False %}
+											{% endif %}
+										</td>
+										{% endfor %}
+								</tr>
+								{% endfor %}
+						</tbody>
+				</table>
+    </header>
+		<p>Légende :
+			<ul>
+			<li><img src="medaille.png" alt="X"/> Problème résolu
+			<li><img src="medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
+			</ul>
+		<p>
+</body>
+</html>
