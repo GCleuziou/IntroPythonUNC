@@ -28,7 +28,7 @@ def creer_html(fichier_template, fichier_sortie,**infos):
 
 # Ajouter ici les appels à la fonction creer_html
 
-creer_html("tableau_template.html", "Résultats.html",
+creer_html("tableau_template.html", "../Resultats.html",
 				date=datetime.now(),
 			   	etudiants=resultats.keys(),
 			   	exercices=exercices,
