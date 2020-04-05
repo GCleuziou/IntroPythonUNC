@@ -2,7 +2,7 @@
 # Version 1 du modèle
 
 nomFic='/Users/cleuziou/donnees/enseignement/UNC/IntroPython/easySphinx/source/tableau_defi/tentatives_csv.csv'
-exercices=["ProduitScalaire","MotPalindrome","CompteChiffre","PhrasePalindrome","SousChaine","ElemSuiteArithmetique","ElemSuiteGeometrique","VerifSuiteAriGeo","SuiteArithmetique","SuiteGeometrique","SuiteAriGeo","Conway"]
+exercices=["somme","ProduitScalaire","MotPalindrome","CompteChiffre","PhrasePalindrome","SousChaine","ElemSuiteArithmetique","ElemSuiteGeometrique","VerifSuiteAriGeo","SuiteArithmetique","SuiteGeometrique","SuiteAriGeo","Conway"]
 
 def chargerResultats(nomFic,listeExercices):
 	"""Parcour du fichier des resultats synthetiques de l'exerciseur"""
@@ -14,7 +14,9 @@ def chargerResultats(nomFic,listeExercices):
 			decomp[i]=decomp[i][1:-1]
 		if decomp[6] in listeExercices:
 			name=decomp[0].split('.')
-			decomp[0]=name[0][0].upper()+name[0][1:]+' '+name[1][0].upper()+name[1][1:]
+			decomp[0]=''
+			for elem in name:
+				decomp[0]+=elem[0].upper()+elem[1:]+' '
 			if decomp[0] not in resultats.keys():
 				resultats[decomp[0]]=dict()
 			resultats[decomp[0]][decomp[6]]=decomp[3]

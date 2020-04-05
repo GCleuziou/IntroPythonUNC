@@ -9,8 +9,10 @@
 </head>
 <body>
 	<header>
-        <h1> Résultats temporaires du "Défi - code"</h1>
-				<p>Généré le {{date.day}}/{{date.month}}/{{date.year}} à {{date.strftime("%H:%M:%S %Z")}}</p>
+        <h1> Résultats évolutifs du "Défi - code"</h1>
+	</header>
+	<article>
+		<p>Généré le {{date.day}}/{{date.month}}/{{date.year}} à {{date.strftime("%H:%M:%S %Z")}}</p>
 				<table>
 						<tbody>
 							<tr>
@@ -38,11 +40,11 @@
 								{% endfor %}
 						</tbody>
 				</table>
-    </header>
+    </article>
 		<p>Légende :
 			<ul>
 			<li><img src="medaille.png" alt="X"/> Problème résolu
-			<li><img src="medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez résoudre les problèmes précédents)
+			<li><img src="medaille_bloquee.png" alt="-"/> Problème bloqué (vous devez d'abord résoudre les problèmes précédents)
 			</ul>
 		<p>
 </body>
