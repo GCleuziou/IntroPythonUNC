@@ -1,4 +1,4 @@
-Problème 11 : Suite arithémtico-géométrique***
+Problème 11 : Suite arithmético-géométrique***
 ----------------------------------------------
 
 Ecrire une fonction ``suiteAriGeo`` qui renvoie True si une *liste* passée en paramètre correspond aux premiers éléments d'une suite arithmético-géométrique.
