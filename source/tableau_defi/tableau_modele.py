@@ -2,7 +2,7 @@
 # Version 1 du modèle
 
 nomFic='/Users/cleuziou/donnees/enseignement/UNC/IntroPython/easySphinx/source/tableau_defi/tentatives_csv.csv'
-exercices=["somme","ProduitScalaire","MotPalindrome","CompteChiffre","PhrasePalindrome","SousChaine","ElemSuiteArithmetique","ElemSuiteGeometrique","VerifSuiteAriGeo","SuiteArithmetique","SuiteGeometrique","SuiteAriGeo","Conway"]
+exercices=["ProduitScalaire","MotPalindrome","CompteChiffre","PhrasePalindrome","SousChaine","ElemSuiteArithmetique","ElemSuiteGeometrique","VerifSuiteAriGeo","SuiteArithmetique","SuiteGeometrique","SuiteAriGeo","Conway"]
 
 def chargerResultats(nomFic,listeExercices):
 	"""Parcour du fichier des resultats synthetiques de l'exerciseur"""
