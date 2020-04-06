@@ -25,6 +25,6 @@ def nbSyllabes(mot):
             if cons: #changement consonne puis voyelle
                res=res+1
                cons=False
-            else:
-               cons=True
+         else:
+            cons=True
    return res

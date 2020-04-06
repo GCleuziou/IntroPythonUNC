@@ -10,9 +10,10 @@
 <body>
 	<header>
         <h1> Résultats évolutifs du "Défi - code"</h1>
+				<p>Généré le {{date.day}}/{{date.month}}/{{date.year}} à {{date.strftime("%H:%M:%S %Z")}}</p>
 	</header>
 	<article>
-		<p>Généré le {{date.day}}/{{date.month}}/{{date.year}} à {{date.strftime("%H:%M:%S %Z")}}</p>
+				<h2>Défi (déjà) relevé pour</h2>
 				<table>
 						<tbody>
 							<tr>
@@ -21,15 +22,45 @@
 								<th>Problème {{i+1}} <br> <span class="nompb">{{exercices[i]}}</span></th>
 								{% endfor %}
 							</tr>
-							{% for nom in etudiants %}
+							{% for nom in etudiants_best %}
 								<tr>
 										<th>{{nom}}</th>
 										{% set valide = namespace(value=True) %}
 										{% for exo in exercices %}
 										<td>
-											{% if resultats[nom][exo]=='oui' and valide.value %}
+											{% if resultats_best[nom][exo]=='oui' and valide.value %}
 											<img src="medaille.png" alt="X"/>
-											{% elif resultats[nom][exo]=='oui' %}
+											{% elif resultats_best[nom][exo]=='oui' %}
+											<img src="medaille_bloquee.png" alt="-"/>
+											{% else %}
+											{% set valide.value = False %}
+											{% endif %}
+										</td>
+										{% endfor %}
+								</tr>
+								{% endfor %}
+						</tbody>
+				</table>
+<!--			</article>
+			<article>-->
+				<h2>Défi en cours pour</h2>
+				<table>
+						<tbody>
+							<tr>
+								<th>Participants</th>
+								{% for i in range(exercices|length) %}
+								<th>Problème {{i+1}} <br> <span class="nompb">{{exercices[i]}}</span></th>
+								{% endfor %}
+							</tr>
+							{% for nom in etudiants_others %}
+								<tr>
+										<th>{{nom}}</th>
+										{% set valide = namespace(value=True) %}
+										{% for exo in exercices %}
+										<td>
+											{% if resultats_others[nom][exo]=='oui' and valide.value %}
+											<img src="medaille.png" alt="X"/>
+											{% elif resultats_others[nom][exo]=='oui' %}
 											<img src="medaille_bloquee.png" alt="-"/>
 											{% else %}
 											{% set valide.value = False %}

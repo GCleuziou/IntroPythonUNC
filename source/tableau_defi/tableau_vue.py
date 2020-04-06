@@ -30,7 +30,9 @@ def creer_html(fichier_template, fichier_sortie,**infos):
 
 creer_html("tableau_template.html", "../Resultats.html",
 				date=datetime.now(),
-			   	etudiants=resultats.keys(),
+			   	etudiants_best=resultats_best.keys(),
+			   	etudiants_others=resultats_others.keys(),
 			   	exercices=exercices,
-			   	resultats=resultats,
+			   	resultats_best=resultats_best,
+			   	resultats_others=resultats_others,
 			   )
