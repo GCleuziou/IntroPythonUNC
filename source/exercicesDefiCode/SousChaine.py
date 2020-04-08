@@ -6,6 +6,7 @@ entrees_visibles = [
 entrees_invisibles = [
 	("Jaime","la vie est belle"),
 	("elle","la vie est belle"),
+	("elle","la viell est belle"),
 	("la vie","la vie est belle"),
 	("belles","la vie est belle"),
 	("telle","la vie est belle"),
@@ -20,7 +21,8 @@ def sousChaine(s1,s2):
   while i<len(s2) and j<len(s1):
     if s1[j]==s2[i]:
       j+=1
-    else:
+    elif j>0:
+      i-=1
       j=0
     i+=1
   return j==len(s1)
